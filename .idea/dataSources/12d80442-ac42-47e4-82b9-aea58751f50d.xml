@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test.db">
+  <database-model serializer="dbm" rdbms="SQLITE" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="3" parent="2" name="imhistograms"/>
+    <table id="4" parent="2" name="imlist"/>
+    <table id="5" parent="2" name="imwords"/>
+    <column id="6" parent="3" name="imid">
+      <DataType>(0,-1)|12</DataType>
+    </column>
+    <column id="7" parent="3" name="histogram">
+      <Position>1</Position>
+      <DataType>(0,-1)|12</DataType>
+    </column>
+    <column id="8" parent="3" name="vocname">
+      <Position>2</Position>
+      <DataType>(0,-1)|12</DataType>
+    </column>
+    <index id="9" parent="3" name="imidhist_idx">
+      <ColNames>imid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <column id="10" parent="4" name="filename">
+      <DataType>(0,-1)|12</DataType>
+    </column>
+    <index id="11" parent="4" name="im_idx">
+      <ColNames>filename</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <column id="12" parent="5" name="imid">
+      <DataType>(0,-1)|12</DataType>
+    </column>
+    <column id="13" parent="5" name="wordid">
+      <Position>1</Position>
+      <DataType>(0,-1)|12</DataType>
+    </column>
+    <column id="14" parent="5" name="vocname">
+      <Position>2</Position>
+      <DataType>(0,-1)|12</DataType>
+    </column>
+    <index id="15" parent="5" name="imid_idx">
+      <ColNames>imid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="16" parent="5" name="wordid_idx">
+      <ColNames>wordid</ColNames>
+      <Unique>1</Unique>
+    </index>
+  </database-model>
+</dataSource>

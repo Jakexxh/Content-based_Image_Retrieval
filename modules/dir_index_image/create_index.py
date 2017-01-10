@@ -20,7 +20,7 @@ with open(settings.sift_path) as f:
 imlist = imtools.get_imlist(settings.image_path)
 nbr_images = len(imlist)
 
-index = indexer.Indexer('test.db', voc)
+index = indexer.Indexer(settings.db_path, voc)
 
 # index.create_tables()
 

@@ -12,3 +12,6 @@ def init():
 
     global sift_path
     sift_path = os.path.join(project_path, 'data/sift/sift.pkl')
+
+    global db_path
+    db_path =os.path.join(project_path,'data/db/test.db')
