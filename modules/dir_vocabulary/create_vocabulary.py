@@ -4,7 +4,7 @@ from PCV.localdescriptors import sift
 from PCV.tools import imtools
 
 import modules.dir_vocabulary.vocabulary
-import settings
+from modules import settings
 
 settings.init()
 
@@ -23,7 +23,7 @@ voc.train(featlist, 100, 10)
 with open(settings.vocabulary_path , 'wb') as f:
     pickle.dump(voc, f)
 
-with open(settings.sift_path,'wb') as f:
+with open(settings.sift_path, 'wb') as f:
     pickle.dump(featlist,f)
 
 print 'vocabulary is:', voc.name, voc.nbr_words

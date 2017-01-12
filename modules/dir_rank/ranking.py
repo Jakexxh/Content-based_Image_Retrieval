@@ -1,22 +1,24 @@
 import pickle
-from PCV.localdescriptors import sift
-from modules.dir_search import searcher
-from PCV.tools import imtools
-import settings
+
 import PCV.geometry.homography as homog
+from PCV.localdescriptors import sift
+from PCV.tools import imtools
+
+from modules import settings
+from modules.dir_search import searcher
 
 settings.init()
 
 imlist = imtools.get_imlist(settings.image_path)
 nbr_images=len(imlist)
 
-with open(settings.sift_path,'rb') as f:
+with open(settings.sift_path, 'rb') as f:
     featlist = pickle.load(f)
 
-with open(settings.vocabulary,'rb') as f:
+with open(settings.vocabulary, 'rb') as f:
     voc = pickle.load(f)
 
-src = searcher(settings.db_path,voc)
+src = searcher(settings.db_path, voc)
 
 q_ind =50
 nbr_results=20
@@ -46,9 +48,9 @@ for ndx in res_reg:
 
     rank[ndx]=len(inliners)
 
-    sorted_rank=sorted(rank.items(),key=lambda t:t[1],reverse=True)
-    res_geom=[res_reg[0]+s[0] for s in sorted_rank]
-    print 'top matches (homography):',res_geom
+sorted_rank=sorted(rank.items(),key=lambda t:t[1],reverse=True)
+res_geom=[res_reg[0]+s[0] for s in sorted_rank]
+print 'top matches (homography):',res_geom
 
-    searcher.plot_results(src,res_reg[:8])
-    searcher.plot_results(src,res_geom[:8])
+searcher.plot_results(src,res_reg[:8])
+searcher.plot_results(src,res_geom[:8])

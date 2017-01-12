@@ -2,9 +2,10 @@ from pysqlite2 import dbapi2 as sqlite
 from numpy import *
 from pylab import *
 from PIL import Image
-
+import pickle
 
 class Searcher(object):
+
     def __init__(self, db, voc):
         self.con = sqlite.connect(db)
         self.voc = voc
@@ -24,7 +25,7 @@ class Searcher(object):
             c = self.candidates_from_word(word)
             candidates += c
 
-        tmp = [(w, candidates.count(w) for w in set(candidates))]
+        tmp = [(w,candidates.count(w)) for w in set(candidates)]
         tmp.sort(cmp=lambda x, y: cmp(x[1], y[1]))
         tmp.reverse()
 
@@ -33,7 +34,8 @@ class Searcher(object):
     def get_imhistogram(self, imname):
         im_id = self.con.execute("select rowid from imlist where filename='%s'" % imname).fetchone()
         s = self.con.execute("select histogram from imhistograms where rowid='%d'" % im_id).fetchone()
-        return pickle.load(str(s[0]))
+
+        return pickle.loads(str(s[0]))
 
     def query(self, imname):
         h = self.get_imhistogram(imname)
@@ -48,6 +50,14 @@ class Searcher(object):
 
         matchscores.sort()
         return matchscores
+
+    def get_filename(self, imid):
+        """ Return the filename for an image id. """
+
+        s = self.con.execute(
+            "select filename from imlist where rowid='%d'" % imid).fetchone()
+        rlative_path=s[0]
+        return s[0]
 
 
 def compute_score(src, imlist):
@@ -70,16 +80,35 @@ def plot_results(src, res):
         axis('off')
     show()
 
+#
+# from modules.dir_vocabulary import vocabulary
+# from PCV.localdescriptors import sift
+# from modules import settings
+# from PCV.tools import imtools
+# import pickle
+#
+# settings.init()
+#
+# sys.modules['vocabulary'] = vocabulary
+#
+# imlist = imtools.get_imlist(settings.image_path)
+#
+# with open(settings.vocabulary_path) as f:
+#     voc = pickle.load(f)
+#
+# with open(settings.sift_path) as f:
+#     featlist = pickle.load(f)
+#
+# src = Searcher(settings.db_path,voc)
+# locs, descr = sift.read_features_from_file(featlist[0])
+# iw = voc.project(descr)
+#
+# print 'try a query...'
+# print src.query(imlist[0])[:10]
+#
+# print 'ask using a histogram...'
+# print src.candidates_from_histogram(iw)[:10]
 
-"""
-    src = imagesearch.Searcher(’test.db’)
-    locs, descr = sift.read_features_from_file(featlist[0])
-    iw = voc.project(descr)
-    print ’ask using a histogram...’
-    print src.candidates_from_histogram(iw)[:10]
 
 
-    src = imagesearch.Searcher(’test.db’)
-    print ’try a query...’
-    print src.query(imlist[0])[:10]
-"""
+

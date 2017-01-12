@@ -1,5 +1,5 @@
 import pickle
-import settings
+from modules import settings
 settings.init()
 
 import sys
@@ -22,7 +22,7 @@ nbr_images = len(imlist)
 
 index = indexer.Indexer(settings.db_path, voc)
 
-# index.create_tables()
+index.create_tables()
 
 for i in range(nbr_images)[:100]:
     locs,descr = sift.read_features_from_file(featlist[i])
