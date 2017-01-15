@@ -37,8 +37,8 @@ class Indexer(object):
             word = imwords[i]
             self.con.execute("insert into imwords(imid,wordid,vocname) values (?,?,?)", (imid, word, self.voc.name))
 
-            self.con.execute("insert into imhistograms(imid,histogram,vocname) values (?,?,?)",
-                             (imid, pickle.dumps(imwords), self.voc.name))
+        self.con.execute("insert into  imhistograms(imid,histogram,vocname) values (?,?,?)",
+                         (imid, pickle.dumps(imwords), self.voc.name))
 
     def is_indexed(self, imname):
         im = self.con.execute("select rowid from imlist where filename='%s'" % imname).fetchone()

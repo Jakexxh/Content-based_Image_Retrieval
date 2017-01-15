@@ -3,9 +3,12 @@ import pickle
 import PCV.geometry.homography as homog
 from PCV.localdescriptors import sift
 from PCV.tools import imtools
-
+import sys
 from modules import settings
 from modules.dir_search import searcher
+from modules.dir_vocabulary import vocabulary
+
+sys.modules['vocabulary'] = vocabulary
 
 settings.init()
 
@@ -15,13 +18,13 @@ nbr_images=len(imlist)
 with open(settings.sift_path, 'rb') as f:
     featlist = pickle.load(f)
 
-with open(settings.vocabulary, 'rb') as f:
+with open(settings.vocabulary_path, 'rb') as f:
     voc = pickle.load(f)
 
-src = searcher(settings.db_path, voc)
+src = searcher.Searcher(settings.db_path, voc)
 
-q_ind =50
-nbr_results=20
+q_ind =2
+nbr_results=2
 
 res_reg = [w[1] for w in src.query(imlist[q_ind])[:nbr_results]]
 print 'top matches (regular):', res_reg

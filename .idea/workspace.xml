@@ -2,22 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="448a65ed-4856-466a-b18e-f4feaf17654a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/page/result.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/page/search.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/web.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/1ba3f83d-d6aa-4699-b2d2-bfca0a648018.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/db/test.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/vocabulary.pkl" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/__init__.py" afterPath="$PROJECT_DIR$/web/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/modules/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webdemo.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/12d80442-ac42-47e4-82b9-aea58751f50d.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/648a77db-03e1-4365-afd5-2c29c941a2fc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/page/search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/web.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/page/result.html" afterPath="$PROJECT_DIR$/templates/result.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/sift/sift.pkl" afterPath="$PROJECT_DIR$/data/sift/sift.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/visual_word_vocabulary/vocabulary.pkl" afterPath="$PROJECT_DIR$/data/visual_word_vocabulary/vocabulary.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/dir_index_image/create_index.py" afterPath="$PROJECT_DIR$/modules/dir_index_image/create_index.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/dir_index_image/indexer.py" afterPath="$PROJECT_DIR$/modules/dir_index_image/indexer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/dir_rank/ranking.py" afterPath="$PROJECT_DIR$/modules/dir_rank/ranking.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/dir_search/searcher.py" afterPath="$PROJECT_DIR$/modules/dir_search/searcher.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/dir_vocabulary/create_vocabulary.py" afterPath="$PROJECT_DIR$/modules/dir_vocabulary/create_vocabulary.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,13 +27,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$searchdemo__1_.coverage" NAME="searchdemo (1) Coverage Results" MODIFIED="1484057027880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$do_flask.coverage" NAME="do_flask Coverage Results" MODIFIED="1484256850868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$do_flask.coverage" NAME="do_flask Coverage Results" MODIFIED="1484273746433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$searchdemo.coverage" NAME="searchdemo Coverage Results" MODIFIED="1484050047798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules" />
-    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$create_index.coverage" NAME="create_index Coverage Results" MODIFIED="1484259010577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules/dir_index_image" />
-    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$searcher.coverage" NAME="searcher Coverage Results" MODIFIED="1484259180628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules/dir_search" />
+    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$ranking.coverage" NAME="ranking Coverage Results" MODIFIED="1484520975011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules/dir_rank" />
+    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$searcher.coverage" NAME="searcher Coverage Results" MODIFIED="1484263655579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules/dir_search" />
+    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$create_index.coverage" NAME="create_index Coverage Results" MODIFIED="1484437618294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules/dir_index_image" />
     <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$generate_index.coverage" NAME="generate_index Coverage Results" MODIFIED="1483826809635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/index_image" />
-    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$create_vocabulary.coverage" NAME="create_vocabulary Coverage Results" MODIFIED="1484258827908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules/dir_vocabulary" />
+    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$create_vocabulary.coverage" NAME="create_vocabulary Coverage Results" MODIFIED="1484433083882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules/dir_vocabulary" />
     <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$settings.coverage" NAME="settings Coverage Results" MODIFIED="1483828604503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules" />
+    <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$webdemo.coverage" NAME="webdemo Coverage Results" MODIFIED="1484271051810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
     <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$generate_sift.coverage" NAME="generate_sift Coverage Results" MODIFIED="1483826469598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/create_vocabulary" />
     <SUITE FILE_PATH="coverage/Content-based_Image_Retrieval$app.coverage" NAME="app Coverage Results" MODIFIED="1484053281596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
   </component>
@@ -79,27 +80,38 @@
       <file leaf-file-name="searcher.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/dir_search/searcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="104" column="1" lean-forward="true" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+            <state relative-caret-position="1216">
+              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="103" selection-end-column="25" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <marker date="1484259280000" expanded="true" signature="364:411" ph="select disti... imwords" />
-                <marker date="1484259280000" expanded="true" signature="939:982" ph="select rowid... imlist" />
-                <marker date="1484259280000" expanded="true" signature="939:983" ph="select rowid... imlist" />
-                <marker date="1484259280000" expanded="true" signature="1036:1086" ph="select histo... imhistograms" />
-                <marker date="1484259280000" expanded="true" signature="1036:1087" ph="select histo... imhistograms" />
-                <marker date="1484259280000" expanded="true" signature="1375:1415" ph="select filen... imlist" />
-                <marker date="1484259280000" expanded="true" signature="1781:1825" ph="select filen... imlist" />
+                <marker date="1484265526000" expanded="true" signature="364:411" ph="select disti... imwords" />
+                <marker date="1484265526000" expanded="true" signature="939:982" ph="select rowid... imlist" />
+                <marker date="1484265526000" expanded="true" signature="939:983" ph="select rowid... imlist" />
+                <marker date="1484265526000" expanded="true" signature="1036:1086" ph="select histo... imhistograms" />
+                <marker date="1484265526000" expanded="true" signature="1036:1087" ph="select histo... imhistograms" />
+                <marker date="1484265526000" expanded="true" signature="1375:1415" ph="select filen... imlist" />
+                <marker date="1484265526000" expanded="true" signature="1781:1825" ph="select filen... imlist" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/page/search.html">
+      <file leaf-file-name="ranking.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/dir_rank/ranking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="284">
+              <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_index.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/dir_index_image/create_index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,8 +123,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -148,8 +160,6 @@
         <option value="$PROJECT_DIR$/modules/dir_index_image/generate_index.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/980ed4f7-3576-4dad-aca7-f4d937b4edb3/console.sql" />
         <option value="dbtable:/7ceba5cb/12d80442-ac42-47e4-82b9-aea58751f50d/imhistograms" />
-        <option value="$PROJECT_DIR$/modules/dir_vocabulary/vocabulary.py" />
-        <option value="$PROJECT_DIR$/modules/dir_rank/ranking.py" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/data/service.conf" />
         <option value="$PROJECT_DIR$/modules/searchdemo.py" />
@@ -161,13 +171,20 @@
         <option value="$PROJECT_DIR$/service.conf" />
         <option value="$PROJECT_DIR$/do_flask.py" />
         <option value="$PROJECT_DIR$/web/result.html" />
-        <option value="$PROJECT_DIR$/web/web.py" />
         <option value="$PROJECT_DIR$/web/search.html" />
         <option value="$PROJECT_DIR$/modules/dir_vocabulary/create_vocabulary.py" />
         <option value="$PROJECT_DIR$/modules/settings.py" />
-        <option value="$PROJECT_DIR$/modules/dir_index_image/create_index.py" />
-        <option value="$PROJECT_DIR$/modules/dir_search/searcher.py" />
         <option value="$PROJECT_DIR$/web/page/search.html" />
+        <option value="$PROJECT_DIR$/web/web.py" />
+        <option value="$PROJECT_DIR$/modules/dir_search/searcher.py" />
+        <option value="$PROJECT_DIR$/web/webdemo.py" />
+        <option value="$PROJECT_DIR$/web/templates/search.html" />
+        <option value="$PROJECT_DIR$/templates/search.html" />
+        <option value="$PROJECT_DIR$/webdemo.py" />
+        <option value="$PROJECT_DIR$/modules/dir_vocabulary/vocabulary.py" />
+        <option value="$PROJECT_DIR$/modules/dir_index_image/create_index.py" />
+        <option value="$PROJECT_DIR$/modules/dir_index_image/indexer.py" />
+        <option value="$PROJECT_DIR$/modules/dir_rank/ranking.py" />
       </list>
     </option>
   </component>
@@ -196,8 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="NBKnowledgePane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,25 +235,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content-based_Image_Retrieval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content-based_Image_Retrieval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -284,6 +281,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dir_index_image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content-based_Image_Retrieval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content-based_Image_Retrieval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -309,6 +324,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="NBKnowledgePane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,19 +341,20 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/page" />
-      <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/modules" />
-      <recent name="$PROJECT_DIR$/modules/dir_demo" />
+      <recent name="$PROJECT_DIR$/web/tmp" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/dir_web" />
+      <recent name="$PROJECT_DIR$/web/page" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/tmp" />
       <recent name="$PROJECT_DIR$/modules" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.searcher">
+  <component name="RunManager" selected="Python.ranking">
     <configuration default="false" name="create_vocabulary" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -355,24 +373,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="searchdemo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Content-based_Image_Retrieval" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/searchdemo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="do_flask" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -386,7 +386,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Content-based_Image_Retrieval" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/web.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webdemo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -409,20 +409,38 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="searcher" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="webdemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules/dir_search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Content-based_Image_Retrieval" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/dir_search/searcher.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webdemo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ranking" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules/dir_rank" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Content-based_Image_Retrieval" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules/dir_rank/ranking.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -643,18 +661,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.create_vocabulary" />
-      <item index="1" class="java.lang.String" itemvalue="Python.searchdemo (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.do_flask" />
-      <item index="3" class="java.lang.String" itemvalue="Python.create_index" />
-      <item index="4" class="java.lang.String" itemvalue="Python.searcher" />
+      <item index="1" class="java.lang.String" itemvalue="Python.do_flask" />
+      <item index="2" class="java.lang.String" itemvalue="Python.create_index" />
+      <item index="3" class="java.lang.String" itemvalue="Python.webdemo" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ranking" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.searcher" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ranking" />
         <item index="1" class="java.lang.String" itemvalue="Python.create_index" />
         <item index="2" class="java.lang.String" itemvalue="Python.create_vocabulary" />
         <item index="3" class="java.lang.String" itemvalue="Python.do_flask" />
-        <item index="4" class="java.lang.String" itemvalue="Python.searchdemo (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.webdemo" />
       </list>
     </recent_temporary>
   </component>
@@ -671,27 +689,36 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16801292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16639742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20355412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11793215" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39726028" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39863014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998187" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819584" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -721,6 +748,24 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -728,11 +773,44 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modules/dir_search/searcher.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modules/dir_index_image/create_index.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modules/dir_index_image/create_index.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modules/dir_vocabulary/create_vocabulary.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modules/dir_vocabulary/create_vocabulary.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/modules/dir_vocabulary/vocabulary.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="18" />
+          <line>17</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modules/dir_index_image/create_index.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -740,88 +818,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="42" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tmp.pgm" />
-    <entry file="file:///Library/Python/2.7/site-packages/PCV/tools/imtools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/dir_vocabulary/vocabulary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/image/ukbench00000.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/scipy/cluster/vq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6559">
-          <caret line="425" column="14" lean-forward="false" selection-start-line="425" selection-start-column="14" selection-end-line="425" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="1595" column="0" lean-forward="false" selection-start-line="1595" selection-start-column="0" selection-end-line="1595" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/visual_word_vocabulary/vocabulary.pkl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="277" column="4" lean-forward="true" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp.pgm" />
-    <entry file="file://$PROJECT_DIR$/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1ba3f83d-d6aa-4699-b2d2-bfca0a648018/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/980ed4f7-3576-4dad-aca7-f4d937b4edb3/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7ceba5cb/1ba3f83d-d6aa-4699-b2d2-bfca0a648018/imwords" />
     <entry file="dbDummy://dbtable:/7ceba5cb/1ba3f83d-d6aa-4699-b2d2-bfca0a648018/imhistograms" />
     <entry file="file:///Library/Python/2.7/site-packages/PCV/imagesearch/vocabulary.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -837,13 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/PCV/localdescriptors/sift.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/7ceba5cb/1ba3f83d-d6aa-4699-b2d2-bfca0a648018/imhistograms" />
     <entry file="dbDummy://dbtable:/7ceba5cb/1ba3f83d-d6aa-4699-b2d2-bfca0a648018/imhistograms" />
     <entry file="dbDummy://dbtable:/7ceba5cb/1ba3f83d-d6aa-4699-b2d2-bfca0a648018/imhistograms" />
@@ -855,13 +849,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/dir_index_image/test.db" />
-    <entry file="file://$PROJECT_DIR$/modules/dir_rank/ranking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/pickle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -901,121 +888,15 @@
     <entry file="file://$PROJECT_DIR$/web/test.html" />
     <entry file="file://$PROJECT_DIR$/web/test.js" />
     <entry file="file://$PROJECT_DIR$/app/app.py" />
-    <entry file="file:///Library/Python/2.7/site-packages/PCV/tools/imtools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/searchdemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7ceba5cb/12d80442-ac42-47e4-82b9-aea58751f50d/imhistograms">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7ceba5cb/12d80442-ac42-47e4-82b9-aea58751f50d/imwords">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/7ceba5cb/12d80442-ac42-47e4-82b9-aea58751f50d/imlist">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/dir_vocabulary/create_vocabulary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/dir_vocabulary/vocabulary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/dir_index_image/indexer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1483825844000" expanded="true" signature="329:358" ph="create table... imlist" />
-            <marker date="1483825844000" expanded="true" signature="387:430" ph="create table... imwords" />
-            <marker date="1483825844000" expanded="true" signature="459:510" ph="create table... imhistograms" />
-            <marker date="1483825844000" expanded="true" signature="1153:1193" ph="insert into imwords... " />
-            <marker date="1483825844000" expanded="true" signature="1153:1208" ph="insert into imwords... " />
-            <marker date="1483825844000" expanded="true" signature="1271:1319" ph="insert into imhistograms... " />
-            <marker date="1483825844000" expanded="true" signature="1271:1334" ph="insert into imhistograms... " />
-            <marker date="1483825844000" expanded="true" signature="1478:1521" ph="select rowid... imlist" />
-            <marker date="1483825844000" expanded="true" signature="1478:1522" ph="select rowid... imlist" />
-            <marker date="1483825844000" expanded="true" signature="1634:1677" ph="select rowid... imlist" />
-            <marker date="1483825844000" expanded="true" signature="1634:1678" ph="select rowid... imlist" />
-            <marker date="1483825844000" expanded="true" signature="1779:1821" ph="insert into imlist... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/service.conf" />
+    <entry file="file://$PROJECT_DIR$/searchdemo.py" />
+    <entry file="dbDummy://dbtable:/7ceba5cb/12d80442-ac42-47e4-82b9-aea58751f50d/imhistograms" />
+    <entry file="dbDummy://dbtable:/7ceba5cb/12d80442-ac42-47e4-82b9-aea58751f50d/imwords" />
+    <entry file="dbDummy://dbtable:/7ceba5cb/12d80442-ac42-47e4-82b9-aea58751f50d/imlist" />
     <entry file="file://$PROJECT_DIR$/modules/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,71 +904,187 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/7ceba5cb/648a77db-03e1-4365-afd5-2c29c941a2fc/imhistograms" />
+    <entry file="file:///Library/Python/2.7/site-packages/PCV/tools/imtools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/form.html" />
+    <entry file="file://$PROJECT_DIR$/web/__init__.py" />
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy/lib/npyio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="728" column="0" lean-forward="false" selection-start-line="728" selection-start-column="0" selection-end-line="728" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/PCV/localdescriptors/sift.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="1614" column="40" lean-forward="true" selection-start-line="1614" selection-start-column="40" selection-end-line="1614" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/dir_vocabulary/tmp.pgm">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/db/test.db">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/7ceba5cb/648a77db-03e1-4365-afd5-2c29c941a2fc/imlist" />
+    <entry file="file://$PROJECT_DIR$/modules/dir_vocabulary/create_vocabulary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/7ceba5cb/648a77db-03e1-4365-afd5-2c29c941a2fc/imlist">
+    <entry file="dbDummy://dbtable:/7ceba5cb/648a77db-03e1-4365-afd5-2c29c941a2fc/imwords" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/629862d5-b58c-4952-8fc3-56d05caa1f70/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/7ceba5cb/629862d5-b58c-4952-8fc3-56d05caa1f70/imlist" />
+    <entry file="dbDummy://dbtable:/7ceba5cb/629862d5-b58c-4952-8fc3-56d05caa1f70/imwords" />
+    <entry file="dbDummy://dbtable:/7ceba5cb/629862d5-b58c-4952-8fc3-56d05caa1f70/imhistograms" />
+    <entry file="file://$PROJECT_DIR$/modules/dir_vocabulary/vocabulary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/dir_index_image/indexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1484437596000" expanded="true" signature="329:358" ph="create table... imlist" />
+            <marker date="1484437596000" expanded="true" signature="387:430" ph="create table... imwords" />
+            <marker date="1484437596000" expanded="true" signature="459:510" ph="create table... imhistograms" />
+            <marker date="1484437596000" expanded="true" signature="1153:1208" ph="insert into imwords... " />
+            <marker date="1484437596000" expanded="true" signature="1267:1331" ph="insert into imhistograms" />
+            <marker date="1484437596000" expanded="true" signature="1471:1515" ph="select rowid... imlist" />
+            <marker date="1484437596000" expanded="true" signature="1627:1671" ph="select rowid... imlist" />
+            <marker date="1484437596000" expanded="true" signature="1772:1814" ph="insert into imlist... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dfad30a3-ca7b-4553-a672-739acf42c624/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/7ceba5cb/dfad30a3-ca7b-4553-a672-739acf42c624/imhistograms">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/dir_index_image/create_index.py">
+    <entry file="file://$PROJECT_DIR$/templates/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/page/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/dir_search/searcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="104" column="1" lean-forward="true" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+        <state relative-caret-position="1216">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="103" selection-end-column="25" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <marker date="1484259280000" expanded="true" signature="364:411" ph="select disti... imwords" />
-            <marker date="1484259280000" expanded="true" signature="939:982" ph="select rowid... imlist" />
-            <marker date="1484259280000" expanded="true" signature="939:983" ph="select rowid... imlist" />
-            <marker date="1484259280000" expanded="true" signature="1036:1086" ph="select histo... imhistograms" />
-            <marker date="1484259280000" expanded="true" signature="1036:1087" ph="select histo... imhistograms" />
-            <marker date="1484259280000" expanded="true" signature="1375:1415" ph="select filen... imlist" />
-            <marker date="1484259280000" expanded="true" signature="1781:1825" ph="select filen... imlist" />
+            <marker date="1484265526000" expanded="true" signature="364:411" ph="select disti... imwords" />
+            <marker date="1484265526000" expanded="true" signature="939:982" ph="select rowid... imlist" />
+            <marker date="1484265526000" expanded="true" signature="939:983" ph="select rowid... imlist" />
+            <marker date="1484265526000" expanded="true" signature="1036:1086" ph="select histo... imhistograms" />
+            <marker date="1484265526000" expanded="true" signature="1036:1087" ph="select histo... imhistograms" />
+            <marker date="1484265526000" expanded="true" signature="1375:1415" ph="select filen... imlist" />
+            <marker date="1484265526000" expanded="true" signature="1781:1825" ph="select filen... imlist" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/page/search.html">
+    <entry file="file://$PROJECT_DIR$/modules/dir_index_image/create_index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="112">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-782">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/dir_rank/ranking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

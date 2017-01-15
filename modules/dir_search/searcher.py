@@ -108,7 +108,5 @@ def plot_results(src, res):
 #
 # print 'ask using a histogram...'
 # print src.candidates_from_histogram(iw)[:10]
-
-
-
+#
 

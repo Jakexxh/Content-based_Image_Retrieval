@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content-based Image Retrieval</title>
+</head>
+<body>
+<form action="/" method="post">
+    <h2>Please input the image path:</h2><br>
+    <input type="text" name="image_path"><br>
+    <p><button type="submit">Retrieval</button></p>
+    <img src="{{ url_for('static', filename = 'image/ukbench00000.jpg') }}" >
+
+</form>
+
+</body>
+</html>
