@@ -23,8 +23,8 @@ with open(settings.vocabulary_path, 'rb') as f:
 
 src = searcher.Searcher(settings.db_path, voc)
 
-q_ind =2
-nbr_results=2
+q_ind =10
+nbr_results=20
 
 res_reg = [w[1] for w in src.query(imlist[q_ind])[:nbr_results]]
 print 'top matches (regular):', res_reg

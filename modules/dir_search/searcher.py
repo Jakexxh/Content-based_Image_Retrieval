@@ -1,5 +1,5 @@
 from pysqlite2 import dbapi2 as sqlite
-from numpy import *
+import numpy
 from pylab import *
 from PIL import Image
 import pickle
@@ -19,7 +19,6 @@ class Searcher(object):
 
     def candidates_from_histogram(self, imwords):
         words = imwords.nonzero()[0]
-
         candidates = []
         for word in words:
             c = self.candidates_from_word(word)
@@ -56,7 +55,6 @@ class Searcher(object):
 
         s = self.con.execute(
             "select filename from imlist where rowid='%d'" % imid).fetchone()
-        rlative_path=s[0]
         return s[0]
 
 
@@ -104,9 +102,9 @@ def plot_results(src, res):
 # iw = voc.project(descr)
 #
 # print 'try a query...'
-# print src.query(imlist[0])[:10]
-#
+# print src.query(imlist[10])[:10]
+
 # print 'ask using a histogram...'
 # print src.candidates_from_histogram(iw)[:10]
-#
+
 

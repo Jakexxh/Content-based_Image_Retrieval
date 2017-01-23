@@ -24,7 +24,7 @@ index = indexer.Indexer(settings.db_path, voc)
 
 index.create_tables()
 
-for i in range(nbr_images)[:100]:
+for i in range(nbr_images):
     locs,descr = sift.read_features_from_file(featlist[i])
     index.add_to_index(imlist[i],descr)
 

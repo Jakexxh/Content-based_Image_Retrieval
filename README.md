@@ -10,6 +10,8 @@
 
 ## Project Structure
 
+
+
 ###Creating Vocabulary (Vocabulary)
 
 *   Property
@@ -35,6 +37,8 @@
     2. project(self, descriptors)
 
        to create the histogram of every visual word
+
+       ​
 
 
 ### Indexing the image (Indexer)
@@ -65,4 +69,52 @@
 
 
 
-​	
+
+### Ranking
+
+​	show two different ways to rank the images, one is regular way, another is in homography way 
+
+​	<u>the ranking functions need to be improved</u>
+
+
+
+### Search the images
+
+​	use basic inverted list which use visual words as primary element to implete searching the image retrieval.
+
+### Implements in web
+
+​	use flask web framework
+
+
+
+## Notes
+
+
+
+1. need to use tf-idf 
+
+
+
+## Requirements
+
+
+
+1. PCV
+
+2. pysqlite2
+
+3. pickle
+
+4. PIL
+
+5. numpy
+
+6. pylab
+
+7. scipy
+
+8. vlfeat commad lines (shell not python modlues)
+
+    http://www.vlfeat.org/install-shell.html
+
