@@ -118,3 +118,5 @@
 
     http://www.vlfeat.org/install-shell.html
 
+9. sqlite (databse)
+
